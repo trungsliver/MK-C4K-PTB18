@@ -125,6 +125,28 @@ while True:
             for i in range(len(cart)):
                 print(f'[{i+1}] {cart[i]}')
             print('=============================')
-            
+    # Chức năng 3
+    elif choice == 3:
+        print('\n========== THÊM SẢN PHẨM VÀO GIỎ HÀNG ==========')
+        addPro = int(input('Nhập chỉ số sản phẩm muốn thêm vào giỏ hàng: '))
+        addPro = addPro - 1 # Đưa index đúng với danh sách
+        if abs(addPro) < len(products):
+            cart.append(products[addPro])
+            print('Thêm sản phẩm thành công!')
+        else:
+            print('Thêm sản phẩm thất bại!')
+        print('============================================')
+
+    # Chức năng 4
+    elif choice == 4:
+        print('\n========== XÓA SẢN PHẨM KHỎI GIỎ HÀNG ==========')
+        delPro = int(input('Nhập chỉ số sản phẩm muốn xóa khỏi giỏ hàng: '))
+        delPro = delPro - 1 # Đưa index đúng với danh sách
+        if abs(delPro) < len(products):
+            cart.pop(delPro)
+            print('Xóa sản phẩm thành công!')
+        else:
+            print('Xóa sản phẩm thất bại!')
+        print('============================================')
     else:
         break
