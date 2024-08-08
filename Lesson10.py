@@ -51,11 +51,11 @@ a = '1 2 3 4 5 6 7 8 9'
 b = 'a,s,d,f,g,h,j,k,l'
 arr = a.split()
 # arr = b.split(',')
-print(arr)
+# print(arr)
 
-# user = 'admin:123456'
-# username, password = user.split(':')
-# print(username, password)
+user = 'admin:1234:56'
+username, password = user.split(':', 1)
+print(username, password)
 
 # Chuyển đổi kiểu dữ liệu trong danh sách
     # Cách 1:
