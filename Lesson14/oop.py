@@ -31,5 +31,5 @@ print('Chu vi:', hv1.ChuVi())
 print('Diện tích:', hv1.DienTich())
 print('Diện tích:', hv1.DienTich2())
 
-ht1.say()
-hv1.say()
+# ht1.say()
+# hv1.say()
